@@ -189,7 +189,7 @@
         }
         
         .hero h1 {
-            font-size: clamp(3rem, 7vw, 5rem);
+            font-size: clamp(2.5rem, 7vw, 5rem);
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 24px;
@@ -210,7 +210,7 @@
         }
         
         .hero-subtitle {
-            font-size: 1.3rem;
+            font-size: clamp(1rem, 3vw, 1.3rem);
             color: var(--gray-600);
             max-width: 650px;
             margin: 0 auto 48px;
@@ -271,20 +271,6 @@
             left: 100%;
         }
         
-        .btn-secondary {
-            background: white;
-            color: var(--teal);
-            border: 2px solid var(--teal);
-            box-shadow: 0 5px 20px rgba(0, 157, 150, 0.15);
-        }
-        
-        .btn-secondary:hover {
-            background: var(--teal);
-            color: white;
-            transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(0, 157, 150, 0.3);
-        }
-        
         /* ========== SECTIONS ========== */
         section {
             padding: 120px 24px;
@@ -322,7 +308,7 @@
         }
         
         .section-header h2 {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 800;
             margin-bottom: 16px;
             color: var(--gray-800);
@@ -343,7 +329,7 @@
         }
         
         .section-header p {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             color: var(--gray-500);
             max-width: 600px;
             margin: 0 auto;
@@ -418,21 +404,21 @@
         }
         
         .escopo-title h3 {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 700;
             color: var(--gray-800);
             margin-bottom: 8px;
         }
         
         .escopo-title p {
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
             color: var(--gray-500);
         }
         
         /* Steps Grid */
         .steps-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
         }
         
@@ -467,7 +453,7 @@
         }
         
         .step-card h4 {
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
             font-weight: 700;
             color: var(--gray-800);
             margin-bottom: 20px;
@@ -482,7 +468,7 @@
             align-items: flex-start;
             gap: 14px;
             padding: 12px 0;
-            font-size: 0.95rem;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
             color: var(--gray-600);
             border-bottom: 1px solid rgba(0, 157, 150, 0.08);
         }
@@ -513,7 +499,7 @@
         /* Menu Grid - Área do Cliente */
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
         }
         
@@ -567,14 +553,14 @@
         }
         
         .menu-item h4 {
-            font-size: 1.25rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
             font-weight: 700;
             color: var(--gray-800);
             margin-bottom: 10px;
         }
         
         .menu-item p {
-            font-size: 0.95rem;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
             color: var(--gray-500);
             line-height: 1.6;
         }
@@ -586,16 +572,8 @@
         
         .diff-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 24px;
-        }
-        
-        @media (max-width: 1024px) {
-            .diff-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        
-        @media (max-width: 600px) {
-            .diff-grid { grid-template-columns: 1fr; }
         }
         
         .diff-card {
@@ -661,14 +639,14 @@
         }
         
         .diff-card h3 {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             font-weight: 700;
             color: var(--gray-800);
             margin-bottom: 12px;
         }
         
         .diff-card p {
-            font-size: 0.9rem;
+            font-size: clamp(0.85rem, 2vw, 0.9rem);
             color: var(--gray-500);
             line-height: 1.6;
         }
@@ -681,7 +659,7 @@
         .bonus-card {
             background: linear-gradient(135deg, #FFFFFF 0%, #F0FDFA 100%);
             border-radius: 32px;
-            padding: 60px;
+            padding: 48px;
             position: relative;
             overflow: hidden;
             box-shadow: 0 30px 80px rgba(0, 157, 150, 0.15);
@@ -710,8 +688,8 @@
         }
         
         .bonus-icon {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             border-radius: 36px;
             background: linear-gradient(135deg, var(--marsala), var(--marsala-dark));
             display: flex;
@@ -723,8 +701,8 @@
         }
         
         .bonus-icon svg {
-            width: 64px;
-            height: 64px;
+            width: 56px;
+            height: 56px;
             stroke: white;
             stroke-width: 1.5;
             fill: none;
@@ -732,11 +710,11 @@
         
         .bonus-text {
             flex: 1;
-            min-width: 300px;
+            min-width: 280px;
         }
         
         .bonus-text h3 {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 800;
             color: var(--gray-800);
             margin-bottom: 8px;
@@ -752,13 +730,13 @@
             color: white;
             padding: 8px 20px;
             border-radius: 100px;
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
             font-weight: 700;
             box-shadow: 0 8px 25px rgba(0, 157, 150, 0.4);
         }
         
         .bonus-text > p {
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1.1rem);
             color: var(--gray-500);
             margin-bottom: 24px;
         }
@@ -770,11 +748,11 @@
         }
         
         .bonus-tag {
-            padding: 10px 20px;
+            padding: 10px 16px;
             background: rgba(0, 157, 150, 0.1);
             color: var(--teal-dark);
             border-radius: 100px;
-            font-size: 0.85rem;
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
             font-weight: 600;
             border: 1px solid rgba(0, 157, 150, 0.2);
         }
@@ -787,12 +765,12 @@
         .bonus-value .old {
             color: var(--gray-400);
             text-decoration: line-through;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 3vw, 1.3rem);
             margin-bottom: 4px;
         }
         
         .bonus-value .new {
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 6vw, 3.5rem);
             font-weight: 800;
             background: linear-gradient(135deg, var(--teal), var(--teal-dark));
             -webkit-background-clip: text;
@@ -800,7 +778,7 @@
         }
         
         .bonus-value .note {
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
             color: var(--gray-500);
         }
         
@@ -853,7 +831,7 @@
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 40px;
-            padding: 60px;
+            padding: 48px;
             max-width: 800px;
             margin: 0 auto;
             position: relative;
@@ -877,12 +855,12 @@
         
         .preco-header .label {
             color: var(--gray-400);
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             margin-bottom: 12px;
         }
         
         .preco-header .valor {
-            font-size: 5rem;
+            font-size: clamp(3rem, 8vw, 5rem);
             font-weight: 800;
             background: linear-gradient(135deg, #FFFFFF 0%, var(--gray-300) 100%);
             -webkit-background-clip: text;
@@ -893,20 +871,16 @@
         
         .preco-header .nota {
             color: var(--gray-500);
-            font-size: 1rem;
+            font-size: clamp(0.85rem, 2vw, 1rem);
         }
         
         .incluso-list {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
             margin-bottom: 48px;
             padding-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        @media (max-width: 600px) {
-            .incluso-list { grid-template-columns: 1fr; }
         }
         
         .incluso-item {
@@ -914,7 +888,7 @@
             align-items: center;
             gap: 16px;
             color: var(--gray-300);
-            font-size: 1rem;
+            font-size: clamp(0.85rem, 2vw, 1rem);
         }
         
         .incluso-item .icon {
@@ -949,8 +923,8 @@
         }
         
         .preco-cta .btn-primary {
-            padding: 24px 60px;
-            font-size: 1.2rem;
+            padding: 24px 48px;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             animation: pulse-glow 2s ease-in-out infinite;
         }
         
@@ -967,7 +941,7 @@
             align-items: center;
             gap: 10px;
             color: var(--gray-500);
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
         }
         
         .preco-garantias svg {
@@ -992,9 +966,9 @@
         
         .faq-question {
             width: 100%;
-            padding: 28px 32px;
+            padding: 24px 28px;
             text-align: left;
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
             font-weight: 600;
             font-family: inherit;
             background: white;
@@ -1038,9 +1012,9 @@
         }
         
         .faq-answer-inner {
-            padding: 24px 32px;
+            padding: 24px 28px;
             color: var(--gray-600);
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             line-height: 1.8;
         }
         
@@ -1088,7 +1062,7 @@
         }
         
         .cta-final p {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             opacity: 0.9;
             margin-bottom: 48px;
             max-width: 600px;
@@ -1102,10 +1076,10 @@
             gap: 14px;
             background: white;
             color: var(--teal);
-            padding: 22px 48px;
+            padding: 20px 40px;
             border-radius: 20px;
             font-weight: 700;
-            font-size: 1.15rem;
+            font-size: clamp(1rem, 2.5vw, 1.15rem);
             text-decoration: none;
             transition: all 0.4s ease;
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
@@ -1122,7 +1096,7 @@
         }
         
         .cta-footer {
-            margin-top: 100px;
+            margin-top: 80px;
             padding-top: 48px;
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             display: flex;
@@ -1134,18 +1108,18 @@
         
         .cta-footer .author h4 {
             font-weight: 700;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
         }
         
         .cta-footer .author p {
             opacity: 0.7;
-            font-size: 0.95rem;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
             margin: 4px 0 0;
         }
         
         .cta-footer .copy {
             opacity: 0.5;
-            font-size: 0.85rem;
+            font-size: clamp(0.75rem, 2vw, 0.85rem);
         }
         
         /* ========== POPUP ========== */
@@ -1158,10 +1132,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 24px;
+            padding: 20px;
             opacity: 0;
             visibility: hidden;
             transition: all 0.4s ease;
+            overflow-y: auto;
         }
         
         .popup-overlay.active {
@@ -1171,15 +1146,17 @@
         
         .popup-content {
             background: white;
-            border-radius: 40px;
-            padding: 56px 48px;
-            max-width: 520px;
+            border-radius: 32px;
+            padding: 36px 32px;
+            max-width: 460px;
             width: 100%;
             text-align: center;
             position: relative;
             transform: scale(0.85) translateY(30px);
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 30px 100px rgba(0, 0, 0, 0.3);
+            max-height: 90vh;
+            overflow-y: auto;
         }
         
         .popup-overlay.active .popup-content {
@@ -1188,10 +1165,10 @@
         
         .popup-close {
             position: absolute;
-            top: 24px;
-            right: 24px;
-            width: 48px;
-            height: 48px;
+            top: 16px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: var(--gray-100);
             border: none;
@@ -1200,6 +1177,7 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
+            z-index: 10;
         }
         
         .popup-close:hover {
@@ -1208,27 +1186,27 @@
         }
         
         .popup-close svg {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             stroke: var(--gray-600);
         }
         
         .popup-icon {
-            width: 100px;
-            height: 100px;
-            border-radius: 30px;
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
             background: linear-gradient(135deg, var(--teal), var(--teal-dark));
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 28px;
+            margin: 0 auto 20px;
             animation: float 3s ease-in-out infinite;
-            box-shadow: 0 20px 50px rgba(0, 157, 150, 0.4);
+            box-shadow: 0 15px 40px rgba(0, 157, 150, 0.4);
         }
         
         .popup-icon svg {
-            width: 48px;
-            height: 48px;
+            width: 32px;
+            height: 32px;
             stroke: white;
             stroke-width: 2;
         }
@@ -1236,29 +1214,29 @@
         .popup-badge {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 10px 20px;
+            gap: 6px;
+            padding: 8px 16px;
             background: linear-gradient(135deg, var(--marsala), var(--marsala-dark));
             color: white;
             border-radius: 100px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
         
         .popup-content h2 {
-            font-size: 3rem;
+            font-size: clamp(2rem, 6vw, 2.5rem);
             font-weight: 800;
             color: var(--gray-800);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         
         .popup-content > p {
-            font-size: 1.1rem;
+            font-size: clamp(0.95rem, 2.5vw, 1rem);
             color: var(--gray-500);
-            margin-bottom: 36px;
+            margin-bottom: 24px;
         }
         
         .popup-content > p strong {
@@ -1269,26 +1247,26 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 36px;
+            gap: 16px;
+            margin-bottom: 28px;
             flex-wrap: wrap;
         }
         
         .popup-preco .old {
             color: var(--marsala);
             text-decoration: line-through;
-            font-size: 1.5rem;
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
             font-weight: 600;
         }
         
         .popup-preco .arrow svg {
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             stroke: var(--gray-400);
         }
         
         .popup-preco .new {
-            font-size: 4rem;
+            font-size: clamp(2.5rem, 7vw, 3.2rem);
             font-weight: 800;
             background: linear-gradient(135deg, var(--teal), var(--teal-dark));
             -webkit-background-clip: text;
@@ -1298,14 +1276,14 @@
         .popup-options {
             display: flex;
             flex-direction: column;
-            gap: 14px;
-            margin-bottom: 28px;
+            gap: 12px;
+            margin-bottom: 24px;
         }
         
         .popup-option {
             width: 100%;
-            padding: 20px 24px;
-            border-radius: 16px;
+            padding: 16px 20px;
+            border-radius: 14px;
             border: 2px solid var(--gray-200);
             background: var(--gray-50);
             cursor: pointer;
@@ -1313,7 +1291,7 @@
             justify-content: space-between;
             align-items: center;
             font-family: inherit;
-            font-size: 1rem;
+            font-size: clamp(0.85rem, 2vw, 0.95rem);
             transition: all 0.3s ease;
             color: var(--gray-600);
         }
@@ -1333,14 +1311,15 @@
         }
         
         .popup-option .radio {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             border: 2px solid var(--gray-300);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all 0.3s ease;
+            flex-shrink: 0;
         }
         
         .popup-option.active .radio {
@@ -1350,31 +1329,32 @@
         
         .popup-option.active .radio::after {
             content: '';
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             background: white;
             border-radius: 50%;
         }
         
         .popup-cta {
             width: 100%;
-            padding: 22px;
-            font-size: 1.15rem;
-            margin-bottom: 20px;
-            border-radius: 16px;
+            padding: 18px 20px;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            margin-bottom: 16px;
+            border-radius: 14px;
         }
         
         .popup-skip {
             background: none;
             border: none;
             color: var(--gray-400);
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 2vw, 0.85rem);
             cursor: pointer;
             font-family: inherit;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             transition: color 0.3s ease;
+            justify-content: center;
         }
         
         .popup-skip:hover {
@@ -1382,42 +1362,154 @@
         }
         
         .popup-skip svg {
-            width: 16px;
-            height: 16px;
+            width: 14px;
+            height: 14px;
         }
         
         .popup-urgency {
-            margin-top: 28px;
+            margin-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             color: var(--teal);
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 2vw, 0.75rem);
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
         
         .popup-urgency svg {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .escopo-card { padding: 32px 24px; }
-            .escopo-header { flex-direction: column; text-align: center; }
-            .bonus-content { flex-direction: column; text-align: center; }
-            .bonus-value { text-align: center; margin-top: 24px; }
-            .bonus-card { padding: 40px 24px; }
-            .preco-card { padding: 40px 24px; }
-            .preco-header .valor { font-size: 3.5rem; }
-            .cta-footer { justify-content: center; text-align: center; }
-            .popup-content { padding: 40px 24px; }
-            .popup-content h2 { font-size: 2.2rem; }
-            .popup-preco .new { font-size: 3rem; }
+            section {
+                padding: 80px 20px;
+            }
+            
+            .hero {
+                min-height: 90vh;
+            }
+            
+            .hero-content {
+                padding: 40px 20px;
+            }
+            
+            .hero-logo {
+                height: 60px;
+            }
+            
+            .hero-buttons {
+                gap: 16px;
+            }
+            
+            .btn {
+                padding: 16px 28px;
+                font-size: 0.95rem;
+            }
+            
+            .escopo-card {
+                padding: 28px 20px;
+            }
+            
+            .escopo-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .escopo-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .diff-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .bonus-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .bonus-icon {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .bonus-value {
+                text-align: center;
+                margin-top: 24px;
+            }
+            
+            .bonus-card {
+                padding: 32px 20px;
+            }
+            
+            .preco-card {
+                padding: 32px 20px;
+            }
+            
+            .incluso-list {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            
+            .preco-garantias {
+                gap: 20px;
+            }
+            
+            .cta-footer {
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .popup-content {
+                padding: 32px 24px;
+                max-width: 95%;
+                border-radius: 24px;
+            }
+            
+            .section-header {
+                margin-bottom: 60px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .paw-decoration {
+                font-size: 28px;
+            }
+            
+            .hero-badge {
+                padding: 10px 18px;
+                font-size: 0.7rem;
+            }
+            
+            .section-badge {
+                padding: 8px 16px;
+                font-size: 0.7rem;
+            }
+            
+            .bonus-ribbon {
+                padding: 10px 50px;
+                font-size: 0.7rem;
+            }
+            
+            .popup-badge {
+                padding: 6px 14px;
+                font-size: 0.65rem;
+            }
         }
     </style>
 </head>
@@ -1447,16 +1539,6 @@
                 <span class="line-2">Área do Cliente</span>
             </h1>
             <p class="hero-subtitle">Desenvolvimento completo do sistema de contratação online e portal do cliente para a <strong>Petsalut</strong> — experiência premium para seus tutores.</p>
-            <div class="hero-buttons">
-                <a href="#escopo" class="btn btn-primary">
-                    Ver Escopo Completo
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
-                </a>
-                <a href="#investimento" class="btn btn-secondary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-                    Investimento
-                </a>
-            </div>
         </div>
     </section>
 
@@ -1520,7 +1602,7 @@
                     <div class="escopo-number marsala">2</div>
                     <div class="escopo-title">
                         <h3>Área do Cliente</h3>
-                        <p>Portal completo com 6 seções para gestão do plano</p>
+                        <p>Portal completo para gestão do plano e pets</p>
                     </div>
                 </div>
                 <div class="menu-grid">
@@ -1613,18 +1695,16 @@
                         <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     </div>
                     <div class="bonus-text">
-                        <h3>5 E-mails Marketing em HTML <span class="free-badge">GRÁTIS</span></h3>
+                        <h3>3 E-mails Marketing em HTML <span class="free-badge">GRÁTIS</span></h3>
                         <p>Templates profissionais totalmente customizados com a identidade da Petsalut — prontos para usar em campanhas</p>
                         <div class="bonus-tags">
                             <span class="bonus-tag">✉️ Boas-vindas</span>
                             <span class="bonus-tag">💳 Lembrete de Pagamento</span>
                             <span class="bonus-tag">🎂 Aniversário do Pet</span>
-                            <span class="bonus-tag">🔄 Renovação</span>
-                            <span class="bonus-tag">🎉 Promoção</span>
                         </div>
                     </div>
                     <div class="bonus-value">
-                        <div class="old">R$ 750</div>
+                        <div class="old">R$ 450</div>
                         <div class="new">R$ 0</div>
                         <div class="note">incluso na proposta</div>
                     </div>
@@ -1661,7 +1741,7 @@
                     </div>
                     <div class="incluso-item">
                         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
-                        <span>Área do Cliente com 6 seções</span>
+                        <span>Área do Cliente completa</span>
                     </div>
                     <div class="incluso-item">
                         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
@@ -1677,7 +1757,7 @@
                     </div>
                     <div class="incluso-item bonus-item">
                         <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/></svg></span>
-                        <span>BÔNUS: 5 E-mails HTML (R$ 750)</span>
+                        <span>BÔNUS: 3 E-mails HTML (R$ 450)</span>
                     </div>
                 </div>
                 
@@ -1688,7 +1768,7 @@
                     </a>
                     <div class="preco-garantias">
                         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Pagamento seguro</span>
-                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Parcelamos em até 6x</span>
+                        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Parcelamos em até 4x</span>
                     </div>
                 </div>
             </div>
@@ -1713,7 +1793,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner">O prazo estimado é de <strong>15 a 20 dias úteis</strong> após a aprovação do briefing inicial. Entregas parciais podem ser feitas ao longo do desenvolvimento para validação.</div>
+                        <div class="faq-answer-inner">O prazo estimado é de <strong>3 a 5 dias úteis</strong> após a aprovação do briefing inicial. Entregas parciais podem ser feitas ao longo do desenvolvimento para validação.</div>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -1740,7 +1820,7 @@
                         <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <div class="faq-answer">
-                        <div class="faq-answer-inner"><strong>50% na entrada</strong> para iniciar o projeto e <strong>50% na entrega final</strong>. Aceito PIX, transferência bancária ou cartão de crédito em até 6x.</div>
+                        <div class="faq-answer-inner"><strong>50% na entrada</strong> para iniciar o projeto e <strong>50% na entrega final</strong>. Aceito PIX, transferência bancária ou cartão de crédito em até 4x.</div>
                     </div>
                 </div>
             </div>
@@ -1794,7 +1874,7 @@
             </div>
             <div class="popup-options">
                 <button class="popup-option active" onclick="selectPayment('parcela')" id="opt-parcela">
-                    <span>6x de R$ 482,83 no cartão</span>
+                    <span>4x de R$ 724,25 no cartão</span>
                     <div class="radio"></div>
                 </button>
                 <button class="popup-option" onclick="selectPayment('pix')" id="opt-pix">
@@ -1853,7 +1933,7 @@
         // Popup
         var selectedPayment = 'parcela';
         var msgs = {
-            parcela: 'Olá, Gustavo! Quero fechar a proposta Petsalut com desconto - 6x de R$ 482,83!',
+            parcela: 'Olá, Gustavo! Quero fechar a proposta Petsalut com desconto - 4x de R$ 724,25!',
             pix: 'Olá, Gustavo! Quero fechar a proposta Petsalut com desconto - R$ 2.897 no PIX!',
             negociar: 'Olá, Gustavo! Vi a proposta Petsalut com desconto de R$ 2.897 e quero negociar.'
         };
